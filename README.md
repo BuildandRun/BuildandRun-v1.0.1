@@ -210,8 +210,8 @@ Learn How To Get Started
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [saas-shield]: https://img.shields.io/badge/build-saas-ff69b4?style=flat-square&logo=appveyor
 [saas-url]: https://sass-lang.com/
-[unknwon-shield]: https://img.shields.io/badge/build-saas-ff69b4?style=flat-square&logo=appveyor
-[unknwon-url]: #
+[unknown-shield]: https://img.shields.io/badge/build-saas-ff69b4?style=flat-square&logo=appveyor
+[unknown-url]: #
 
 
 [newversion]: https://img.shields.io/badge/VERSION-Build%20and%20Run%20v2.0.2-green?style=for-the-badge&logo=
