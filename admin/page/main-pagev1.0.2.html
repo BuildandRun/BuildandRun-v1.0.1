@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" xml:lang="en">
+
+<head>
+    <title>Administration | Build and Run</title>
+    <!-----------------------------
+
+      B&R | Administration Panel
+
+      Copyright © 2022
+
+    -------------------------------->
+    <meta name="theme-color" content="#fff">
+    <!-- FAVICON  -->
+    <link rel="shortcut icon" href="https://technology.brstore.us/bandr/faviconBR.png" />
+    <!-- FAVICON  -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="keywords" content="moodle, Space 2.1" />
+    <link rel="stylesheet" type="text/css" href="https://manage.brstore.us/function/combo.css" />
+    <script id="firstthemesheet"
+        type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script>
+    <link rel="stylesheet" type="text/css" href="https://manage.brstore.us/function/styles.php.css" />
+    <script>
+        //<![CDATA[
+        var M = {}; M.yui = {};
+        M.pageloadstarttime = new Date();
+        M.cfg = { "wwwroot": "https:\/\/roseathemes.com\/space\/1", "homeurl": {}, "sesskey": "DVue8xn3xt", "sessiontimeout": "28800", "sessiontimeoutwarning": "1200", "themerev": "1664284111", "slasharguments": 1, "theme": "space", "iconsystemmodule": "core\/icon_system_standard", "jsrev": "1664284111", "admin": "admin", "svgicons": true, "usertimezone": "America\/New_York", "courseId": 1, "courseContextId": 2, "contextid": 2, "contextInstanceId": 1, "langrev": 1665480724, "templaterev": "1664284111" }; var yui1ConfigFn = function (me) { if (/-skin|reset|fonts|grids|base/.test(me.name)) { me.type = 'css'; me.path = me.path.replace(/\.js/, '.css'); me.path = me.path.replace(/\/yui2-skin/, '/assets/skins/sam/yui2-skin') } };
+        var yui2ConfigFn = function (me) {
+            var parts = me.name.replace(/^moodle-/, '').split('-'), component = parts.shift(), module = parts[0], min = '-min'; if (/-(skin|core)$/.test(me.name)) { parts.pop(); me.type = 'css'; min = '' }
+            if (module) { var filename = parts.join('-'); me.path = component + '/' + module + '/' + filename + min + '.' + me.type } else { me.path = component + '/' + component + '.' + me.type }
+        };
+        YUI_config = { "debug": false, "base": "https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/3.17.2\/", "comboBase": "https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?", "combine": true, "filter": null, "insertBefore": "firstthemesheet", "groups": { "yui2": { "base": "https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/2in3\/2.9.0\/build\/", "comboBase": "https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?", "combine": true, "ext": false, "root": "2in3\/2.9.0\/build\/", "patterns": { "yui2-": { "group": "yui2", "configFn": yui1ConfigFn } } }, "moodle": { "name": "moodle", "base": "https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?m\/1664284111\/", "combine": true, "comboBase": "https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?", "ext": false, "root": "m\/1664284111\/", "patterns": { "moodle-": { "group": "moodle", "configFn": yui2ConfigFn } }, "filter": null, "modules": { "moodle-core-notification": { "requires": ["moodle-core-notification-dialogue", "moodle-core-notification-alert", "moodle-core-notification-confirm", "moodle-core-notification-exception", "moodle-core-notification-ajaxexception"] }, "moodle-core-notification-dialogue": { "requires": ["base", "node", "panel", "escape", "event-key", "dd-plugin", "moodle-core-widget-focusafterclose", "moodle-core-lockscroll"] }, "moodle-core-notification-alert": { "requires": ["moodle-core-notification-dialogue"] }, "moodle-core-notification-confirm": { "requires": ["moodle-core-notification-dialogue"] }, "moodle-core-notification-exception": { "requires": ["moodle-core-notification-dialogue"] }, "moodle-core-notification-ajaxexception": { "requires": ["moodle-core-notification-dialogue"] }, "moodle-core-popuphelp": { "requires": ["moodle-core-tooltip"] }, "moodle-core-dragdrop": { "requires": ["base", "node", "io", "dom", "dd", "event-key", "event-focus", "moodle-core-notification"] }, "moodle-core-actionmenu": { "requires": ["base", "event", "node-event-simulate"] }, "moodle-core-blocks": { "requires": ["base", "node", "io", "dom", "dd", "dd-scroll", "moodle-core-dragdrop", "moodle-core-notification"] }, "moodle-core-formchangechecker": { "requires": ["base", "event-focus", "moodle-core-event"] }, "moodle-core-tooltip": { "requires": ["base", "node", "io-base", "moodle-core-notification-dialogue", "json-parse", "widget-position", "widget-position-align", "event-outside", "cache-base"] }, "moodle-core-event": { "requires": ["event-custom"] }, "moodle-core-lockscroll": { "requires": ["plugin", "base-build"] }, "moodle-core-handlebars": { "condition": { "trigger": "handlebars", "when": "after" } }, "moodle-core-chooserdialogue": { "requires": ["base", "panel", "moodle-core-notification"] }, "moodle-core-maintenancemodetimer": { "requires": ["base", "node"] }, "moodle-core-languninstallconfirm": { "requires": ["base", "node", "moodle-core-notification-confirm", "moodle-core-notification-alert"] }, "moodle-core_availability-form": { "requires": ["base", "node", "event", "event-delegate", "panel", "moodle-core-notification-dialogue", "json"] }, "moodle-backup-backupselectall": { "requires": ["node", "event", "node-event-simulate", "anim"] }, "moodle-backup-confirmcancel": { "requires": ["node", "node-event-simulate", "moodle-core-notification-confirm"] }, "moodle-course-dragdrop": { "requires": ["base", "node", "io", "dom", "dd", "dd-scroll", "moodle-core-dragdrop", "moodle-core-notification", "moodle-course-coursebase", "moodle-course-util"] }, "moodle-course-util": { "requires": ["node"], "use": ["moodle-course-util-base"], "submodules": { "moodle-course-util-base": {}, "moodle-course-util-section": { "requires": ["node", "moodle-course-util-base"] }, "moodle-course-util-cm": { "requires": ["node", "moodle-course-util-base"] } } }, "moodle-course-categoryexpander": { "requires": ["node", "event-key"] }, "moodle-course-management": { "requires": ["base", "node", "io-base", "moodle-core-notification-exception", "json-parse", "dd-constrain", "dd-proxy", "dd-drop", "dd-delegate", "node-event-delegate"] }, "moodle-form-dateselector": { "requires": ["base", "node", "overlay", "calendar"] }, "moodle-form-passwordunmask": { "requires": [] }, "moodle-form-shortforms": { "requires": ["node", "base", "selector-css3", "moodle-core-event"] }, "moodle-question-preview": { "requires": ["base", "dom", "event-delegate", "event-key", "core_question_engine"] }, "moodle-question-searchform": { "requires": ["base", "node"] }, "moodle-question-chooser": { "requires": ["moodle-core-chooserdialogue"] }, "moodle-availability_completion-form": { "requires": ["base", "node", "event", "moodle-core_availability-form"] }, "moodle-availability_date-form": { "requires": ["base", "node", "event", "io", "moodle-core_availability-form"] }, "moodle-availability_grade-form": { "requires": ["base", "node", "event", "moodle-core_availability-form"] }, "moodle-availability_group-form": { "requires": ["base", "node", "event", "moodle-core_availability-form"] }, "moodle-availability_grouping-form": { "requires": ["base", "node", "event", "moodle-core_availability-form"] }, "moodle-availability_profile-form": { "requires": ["base", "node", "event", "moodle-core_availability-form"] }, "moodle-mod_assign-history": { "requires": ["node", "transition"] }, "moodle-mod_quiz-quizbase": { "requires": ["base", "node"] }, "moodle-mod_quiz-dragdrop": { "requires": ["base", "node", "io", "dom", "dd", "dd-scroll", "moodle-core-dragdrop", "moodle-core-notification", "moodle-mod_quiz-quizbase", "moodle-mod_quiz-util-base", "moodle-mod_quiz-util-page", "moodle-mod_quiz-util-slot", "moodle-course-util"] }, "moodle-mod_quiz-toolboxes": { "requires": ["base", "node", "event", "event-key", "io", "moodle-mod_quiz-quizbase", "moodle-mod_quiz-util-slot", "moodle-core-notification-ajaxexception"] }, "moodle-mod_quiz-modform": { "requires": ["base", "node", "event"] }, "moodle-mod_quiz-util": { "requires": ["node", "moodle-core-actionmenu"], "use": ["moodle-mod_quiz-util-base"], "submodules": { "moodle-mod_quiz-util-base": {}, "moodle-mod_quiz-util-slot": { "requires": ["node", "moodle-mod_quiz-util-base"] }, "moodle-mod_quiz-util-page": { "requires": ["node", "moodle-mod_quiz-util-base"] } } }, "moodle-mod_quiz-questionchooser": { "requires": ["moodle-core-chooserdialogue", "moodle-mod_quiz-util", "querystring-parse"] }, "moodle-mod_quiz-autosave": { "requires": ["base", "node", "event", "event-valuechange", "node-event-delegate", "io-form"] }, "moodle-message_airnotifier-toolboxes": { "requires": ["base", "node", "io"] }, "moodle-filter_glossary-autolinker": { "requires": ["base", "node", "io-base", "json-parse", "event-delegate", "overlay", "moodle-core-event", "moodle-core-notification-alert", "moodle-core-notification-exception", "moodle-core-notification-ajaxexception"] }, "moodle-filter_mathjaxloader-loader": { "requires": ["moodle-core-event"] }, "moodle-editor_atto-editor": { "requires": ["node", "transition", "io", "overlay", "escape", "event", "event-simulate", "event-custom", "node-event-html5", "node-event-simulate", "yui-throttle", "moodle-core-notification-dialogue", "moodle-core-notification-confirm", "moodle-editor_atto-rangy", "handlebars", "timers", "querystring-stringify"] }, "moodle-editor_atto-plugin": { "requires": ["node", "base", "escape", "event", "event-outside", "handlebars", "event-custom", "timers", "moodle-editor_atto-menu"] }, "moodle-editor_atto-menu": { "requires": ["moodle-core-notification-dialogue", "node", "event", "event-custom"] }, "moodle-editor_atto-rangy": { "requires": [] }, "moodle-format_trail-trailkeys": { "requires": ["event-nav-keys"] }, "moodle-report_eventlist-eventfilter": { "requires": ["base", "event", "node", "node-event-delegate", "datatable", "autocomplete", "autocomplete-filters"] }, "moodle-report_loglive-fetchlogs": { "requires": ["base", "event", "node", "io", "node-event-delegate"] }, "moodle-gradereport_history-userselector": { "requires": ["escape", "event-delegate", "event-key", "handlebars", "io-base", "json-parse", "moodle-core-notification-dialogue"] }, "moodle-qbank_editquestion-chooser": { "requires": ["moodle-core-chooserdialogue"] }, "moodle-tool_capability-search": { "requires": ["base", "node"] }, "moodle-tool_lp-dragdrop-reorder": { "requires": ["moodle-core-dragdrop"] }, "moodle-tool_monitor-dropdown": { "requires": ["base", "event", "node"] }, "moodle-assignfeedback_editpdf-editor": { "requires": ["base", "event", "node", "io", "graphics", "json", "event-move", "event-resize", "transition", "querystring-stringify-simple", "moodle-core-notification-dialog", "moodle-core-notification-alert", "moodle-core-notification-warning", "moodle-core-notification-exception", "moodle-core-notification-ajaxexception"] }, "moodle-atto_accessibilitychecker-button": { "requires": ["color-base", "moodle-editor_atto-plugin"] }, "moodle-atto_accessibilityhelper-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_align-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_bazsnippets-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_bold-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_charmap-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_clear-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_collapse-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_emojipicker-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_emoticon-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_equation-button": { "requires": ["moodle-editor_atto-plugin", "moodle-core-event", "io", "event-valuechange", "tabview", "array-extras"] }, "moodle-atto_h5p-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_html-beautify": {}, "moodle-atto_html-button": { "requires": ["promise", "moodle-editor_atto-plugin", "moodle-atto_html-beautify", "moodle-atto_html-codemirror", "event-valuechange"] }, "moodle-atto_html-codemirror": { "requires": ["moodle-atto_html-codemirror-skin"] }, "moodle-atto_image-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_indent-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_italic-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_link-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_linkadv-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_managefiles-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_managefiles-usedfiles": { "requires": ["node", "escape"] }, "moodle-atto_media-button": { "requires": ["moodle-editor_atto-plugin", "moodle-form-shortforms"] }, "moodle-atto_noautolink-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_orderedlist-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_recordrtc-button": { "requires": ["moodle-editor_atto-plugin", "moodle-atto_recordrtc-recording"] }, "moodle-atto_recordrtc-recording": { "requires": ["moodle-atto_recordrtc-button"] }, "moodle-atto_rtl-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_strike-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_subscript-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_superscript-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_table-button": { "requires": ["moodle-editor_atto-plugin", "moodle-editor_atto-menu", "event", "event-valuechange"] }, "moodle-atto_title-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_underline-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_undo-button": { "requires": ["moodle-editor_atto-plugin"] }, "moodle-atto_unorderedlist-button": { "requires": ["moodle-editor_atto-plugin"] } } }, "gallery": { "name": "gallery", "base": "https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/gallery\/", "combine": true, "comboBase": "https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?", "ext": false, "root": "gallery\/1664284111\/", "patterns": { "gallery-": { "group": "gallery" } } } }, "modules": { "core_filepicker": { "name": "core_filepicker", "fullpath": "https:\/\/roseathemes.com\/space\/1\/lib\/javascript.php\/1664284111\/repository\/filepicker.js", "requires": ["base", "node", "node-event-simulate", "json", "async-queue", "io-base", "io-upload-iframe", "io-form", "yui2-treeview", "panel", "cookie", "datatable", "datatable-sort", "resize-plugin", "dd-plugin", "escape", "moodle-core_filepicker", "moodle-core-notification-dialogue"] }, "core_comment": { "name": "core_comment", "fullpath": "https:\/\/roseathemes.com\/space\/1\/lib\/javascript.php\/1664284111\/comment\/comment.js", "requires": ["base", "io-base", "node", "json", "yui2-animation", "overlay", "escape"] }, "mathjax": { "name": "mathjax", "fullpath": "https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured" } } };
+        M.yui.loader = { modules: {} };
+//]]>
+    </script>
+    <meta name="description" content="Space 2.1 for Moodle 4.0 and later." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <!-- Swiper JS -->
+    <script src="https://manage.brstore.us/function/swiper-bundle.min.js"></script>
+    <script src="https://manage.brstore.us/function/tiny-slider.js"></script>
+    <link rel="stylesheet" href="https://manage.brstore.us/function/tiny-slider.css">
+</head>
+
+<body id="page-site-index"
+    class="limitedwidth format-site course path-site dir-ltr lang-en yui-skin-sam yui3-skin-sam roseathemes-com--space-1 pagelayout-frontpage course-1 context-2 notloggedin uses-drawers hidden-sidebar">
+    <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+    <div id="page-wrapper" class="d-print-block  rui--course-witout-nav">
+        <div>
+            <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+        </div>
+        <script src="https://manage.brstore.us/function/lib/polyfills/javascript.php.js"></script>
+        <script src="https://manage.brstore.us/function/combo.js"></script>
+        <script src="https://manage.brstore.us/function/lib/javascript.php.js"></script>
+        <script>
+            //<![CDATA[
+            document.body.className += ' jsenabled';
+//]]>
+        </script>
+        <!-- Build and Run Logo  -->
+        <nav id="topBar" class="rui-topbar-wrapper moodle-has-zindex">
+            <div class="rui-mobile-nav">
+                <a id="logo" href="index.html" class="d-inline-flex aabtn ">
+                    <span class="rui-logo dark-mode-logo">
+                        <img src="https://technology.brstore.us/bandr/faviconBR.png" class="rui-custom-logo"
+                            alt="Space" />
+                        <img src="https://technology.brstore.us/bandr/faviconBR.png" class="rui-custom-dmlogo"
+                            alt="Space" />
+                    </span>
+                </a>
+                <button id="mobileNav" class="rui-mobile-nav-btn rui-topbar-btn">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.75 5.75H19.25"></path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.75 18.25H19.25"></path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4.75 12H19.25"></path>
+                    </svg>
+                </button>
+            </div>
+            <div class="rui-topbar wrapper-page rui-topbar--custom-menu">
+                <div id="topbarLeft" class="d-inline-flex align-items-center">
+                    <div class="d-inline-flex align-items-center">
+                        <!-- Build and Run Logo  -->
+                        <a id="logo" href="index.html"
+                            class="d-none d-md-inline-flex rui-navbar-brand rui-navbar-brand--img aabtn ">
+                            <span class="rui-logo dark-mode-logo">
+                                <img src="https://technology.brstore.us/bandr/faviconBR.png"
+                                    class="rui-custom-logo ml-2" alt="Space" />
+                                <img src="https://technology.brstore.us/bandr/faviconBR.png"
+                                    class="rui-custom-dmlogo ml-2" alt="Space" />
+                            </span>
+
+                        </a>
+                        <!-- Build and Run Logo  -->
+                        <!-- Language Codes -->
+                    </div>
+                    <div class="rui-navbar-nav--sep d-inline-flex mx-1">
+                        <div class="rui-navbar-lang dropdown">
+                            <button class="rui-topbar-btn rui-lang-btn" id="drop-down-6347773f8c5d46347773f8b0064"
+                                data-toggle="dropdown" aria-haspopup="true" role="button" aria-label="Languages"
+                                aria-expanded="false">
+                                <svg class="ml-md-2" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M5.75 19.25L5.75 13.25M5.75 13.25L5.75 5.75C5.75 5.75 8.5 3.5 12 5.75C15.5 8 18.25 5.75 18.25 5.75L18.25 13.25C18.25 13.25 15.5 15.5 12 13.25C8.5 11 5.75 13.25 5.75 13.25Z">
+                                    </path>
+                                </svg>
+                                <span class="rui-lang-btn-text ml-2 mr-2 text-uppercase">en</span>
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="drop-down-6347773f8c5d46347773f8b0064">
+                                <a class="dropdown-item" href="#" title="Language">English ‎(en)‎ 🇺🇸</a>
+                                <a class="dropdown-item" href="https://manage.brstore.us/flag/fr.html" title="Language">French ‎(fr)‎ 🇫🇷</a>
+                                <a class="dropdown-item" href="https://manage.brstore.us/flag/es.html" title="Language">Spanish ‎(es) 🇪🇸‎</a>
+                            </div>
+                        </div>
+                        <!-- Language Codes -->
+                        <!-- Navigation  -->
+                    </div>
+                </div>
+                <nav class="moremenu navigation">
+                    <ul id="moremenu-topbar" role="menubar" class="nav more-nav">
+                        <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+                            <a class="dropdown-toggle nav-link  " id="drop-down-" role="menuitem" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-"
+                                tabindex="-1">
+                                Web App
+                            </a>
+                            <div class="dropdown-menu" role="menu" id="drop-down-menu-" aria-labelledby="drop-down-">
+                                <a class="dropdown-item" role="menuitem" href="https://technology.brstore.us/projects/"
+                                    tabindex="-1">Projects</a>
+                                <a class="dropdown-item" role="menuitem" href="https://technology.brstore.us/pricing/"
+                                    tabindex="-1">Pricing</a>
+                                <a class="dropdown-item" role="menuitem" href="https://technology.brstore.us/glossary/"
+                                    tabindex="-1">Glossary</a>
+                                <a class="dropdown-item" role="menuitem" href="https://technology.brstore.us/#service"
+                                    tabindex="-1">Service</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" role="menuitem" href="https://technology.brstore.us/"
+                                    tabindex="-1">Technology</a>
+                            </div>
+
+                            <!-- Navigation  -->
+
+                        </li>
+                        <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                            <a role="menuitem" class="nav-link  " href="https://media.brstore.us/" tabindex="-1">
+                                Media
+                            </a>
+                        </li>
+                        <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                            <a role="menuitem" class="nav-link  " href="https://github.com/BuildandRun" tabindex="-1">
+                                Github
+                            </a>
+                        </li>
+                        <li class="dropdown nav-item" role="none" data-forceintomoremenu="false">
+                            <a class="dropdown-toggle nav-link  " id="drop-down-" role="menuitem" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false" href="#" aria-controls="drop-down-menu-"
+                                tabindex="-1">
+                                Versions
+                            </a>
+                            <div class="dropdown-menu" role="menu" id="drop-down-menu-" aria-labelledby="drop-down-">
+                                <a class="dropdown-item" role="menuitem"
+                                    href="https://github.com/orgs/BuildandRun/projects/1/views/1 " tabindex="-1"> Build
+                                    and Run v1.0.1 🚀</a>
+                            </div>
+                        </li>
+                        <li data-key="" class="nav-item" role="none" data-forceintomoremenu="false">
+                            <a role="menuitem" class="nav-link  " href="mailto:support@brstore.us" tabindex="-1">
+                                Contact
+                            </a>
+                            <!-- Navigation  -->
+                        </li>
+                        <li role="none" class="dropdown dropdownmoremenu morebutton d-none" data-region="morebutton">
+                            <a class="btn btn-icon btn--more " href="#" id="moremenu-dropdown-topbar" role="menuitem"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                <svg width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                    <path fill="currentColor"
+                                        d="M13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11C12.5523 11 13 11.4477 13 12Z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M13 8C13 8.55228 12.5523 9 12 9C11.4477 9 11 8.55228 11 8C11 7.44772 11.4477 7 12 7C12.5523 7 13 7.44772 13 8Z">
+                                    </path>
+                                    <path fill="currentColor"
+                                        d="M13 16C13 16.5523 12.5523 17 12 17C11.4477 17 11 16.5523 11 16C11 15.4477 11.4477 15 12 15C12.5523 15 13 15.4477 13 16Z">
+                                    </path>
+                                </svg>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown"
+                                aria-labelledby="moremenu-dropdown-topbar" role="menu">
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- Navigation  -->
+                <!-- Access  -->
+                <div class="rui-topbar-customfield ml-auto d-none d-lg-flex"><span
+                        class="d-inline-flex align-items-center">
+                        <span class="mr-2 ml-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M4.75 10L12 5.75L19.2501 10L12 14.25L4.75 10Z" stroke="currentColor"
+                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M12.5 10C12.5 10.2761 12.2761 10.5 12 10.5C11.7239 10.5 11.5 10.2761 11.5 10C11.5 9.72386 11.7239 9.5 12 9.5C12.2761 9.5 12.5 9.72386 12.5 10Z"
+                                    stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path
+                                    d="M6.75 11.5V16.25C6.75 16.25 8 18.25 12 18.25C16 18.25 17.25 16.25 17.25 16.25V11.5"
+                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                    stroke-linejoin="round"></path>
+                            </svg>
+                        </span>
+                        <p>Adminstration Panel v1.0.1<br><a href="#" target="_blank">Manage everything!</a>
+                        </p>
+                    </span></div>
+                <ul class="rui-icon-menu rui-icon-menu--right ">
+                    <li class="rui-icon-menu-admin"></li>
+                    <li class="rui-icon-menu-plugins"></li>
+                    <li class="rui-icon-menu-user m-0">
+                        <div class="usermenu"><span class="login"><a class="rui-topbar-btn rui-login-btn"
+                                    href="https://host.brstore.us/portal/"><span class="rui-login-btn-txt">Log
+                                        in</span><svg class="ml-2" width="20" height="20" fill="none"
+                                        viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M9.75 8.75L13.25 12L9.75 15.25"></path>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2"
+                                            d="M9.75 4.75H17.25C18.3546 4.75 19.25 5.64543 19.25 6.75V17.25C19.25 18.3546 18.3546 19.25 17.25 19.25H9.75">
+                                        </path>
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2" d="M13 12H4.75"></path>
+                                    </svg></a></span></div>
+                    </li>
+                </ul>
+                <button class="d-flex d-md-none rui-mobile-nav-btn-close rui-topbar-btn">
+                    <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17.25 6.75L6.75 17.25"></path>
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6.75 6.75L17.25 17.25"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+        <!-- Access  -->
+
+
+
+
+        <div id="page" data-region="mainpage" data-usertour="scroller" class="container-fluid drawers  drag-container">
+            <div id="topofscroll" class="main-inner">
+                <div id="page-content" class="page-content wrapper-page">
+
+
+
+                    <div class="sticky-header-settings-menu d-inline-flex">
+                        <div class="course-settings-menu">
+
+                            <div id="settingsMenu" class="settings-menu">
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                    <div class="wrapper-header">
+
+                    </div>
+                    
+
+                     <!-- WARNING  -->
+
+                     <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                        <strong>Warning!</strong> Links under different language sections of the Panel do not function.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+
+                      <!-- WARNING  -->
+
+                    <div id="region-main-box" class="region-main-wrapper">
+                        <section id="region-main" class="region-main-content " aria-label="Content">
+                            <div>
+                                <div class="">
+
+
+                                    <!-- Start Block 16 -->
+                                    <div class="wrapper-fw rui-fp-block--16 ">
+                                        <div class="wrapper-md text-center">
+                                            <!-- start .badge -->
+                                            <div class="badge badge-info">Administration Panel v1.0.1 is here!</div>
+                                            <!-- end .badge -->
+                                            <h2 class="display-2 mt-4">Hi! Salut! ¡Hola!<br>Welcome to the #1 Admin Tool
+                                            </h2>
+                                            <p class="rui-block-text--1 mt-3">This platform allows you to generate a new
+                                                password, view your plan, request additional emails, submit a request
+                                                for devs to customize your site, and modify or cancel your subscription.
+                                            </p>
+                                            <div class="d-flex mt-4 justify-content-center w-100"><a
+                                                    href="https://host.brstore.us/portal/"
+                                                    class="m-2 btn btn-lg btn-dark" target="_blank">Access Now</a><a
+                                                    href="https://host.brstore.us/guide.pdf"
+                                                    class="m-2 btn btn-lg btn-secondary" target="_blank">Guide</a></div>
+
+                                            <p class="rui-block-text--light rui-block-text--3 mt-3">Trusted by hundreds
+                                                of customers</p>
+
+                                            <div class="row justify-content-center align-items-center">
+                                                <div class="col-auto col-sm py-3 text-center">
+                                                    <img src="https://technology.brstore.us/partners/logo-customer-shopify.svg"
+                                                        alt="Logo" width="386" height="auto"
+                                                        class="img-fluid atto_image_button_middle">
+                                                </div>
+                                                <!-- End Col -->
+                                                <div class="col-auto col-sm py-3 text-center">
+                                                    <img src="https://technology.brstore.us/partners/indeed.svg"
+                                                        alt="Logo" width="386" height="auto"
+                                                        class="img-fluid atto_image_button_middle">
+                                                </div>
+                                                <!-- End Col -->
+                                                <div class="col-auto col-sm py-3 text-center">
+                                                    <img src="https://technology.brstore.us/partners/paypal.svg"
+                                                        alt="Logo" width="386" height="auto"
+                                                        class="img-fluid atto_image_button_middle">
+                                                </div>
+                                                <!-- End Col -->
+                                                <div class="col-auto col-sm py-3 text-center">
+                                                    <img src="https://technology.brstore.us/partners/fiverr.svg"
+                                                        alt="Logo" width="386" height="auto"
+                                                        class="img-fluid atto_image_button_middle">
+                                                </div>
+                                                <!-- End Col -->
+                                            </div>
+                                            <!-- End Row -->
+
+                                        </div><!-- end .wrapper-md -->
+                                    </div>
+                                    <!-- <hr class="rui-block-hr" /> -->
+                                    <!-- End Block 16 -->
+                                    <div class="wrapper-xl">
+                                        <div class="main-content" role="main"><span id="maincontent"></span><br />
+                                        </div>
+                                    </div>
+
+                                    <!-- Start Block #1 -->
+
+                                    <!-- End Block #1 -->
+
+
+                                    <script>var swiper = new Swiper(".swiper-block--1", { slidesPerView: 1, pagination: { el: ".swiper-pagination", type: "progressbar" }, navigation: { nextEl: ".swiper-button-next", prevEl: ".swiper-button-prev" }, autoplay: { delay: 6000, }, keyboard: { enabled: !0 }, mousewheel: { releaseOnEdges: !0 }, effect: "creative", autoHeight: !0, creativeEffect: { prev: { shadow: !0, translate: ["-20%", 0, -1] }, next: { translate: ["100%", 0, 0] } }, breakpoints: {} });</script>
+                                    <!-- Start Block 6-->
+                                    <div class="wrapper-fw rui-fp-block--6 ">
+                                        <!-- Start - Block - Testimonials #3 -->
+                                        <!-- End - Block - Testimonials #3 -->
+
+                                    </div>
+                                    <hr class="rui-block-hr" />
+                                    <!-- End Block 6 -->
+                                    <!-- Start Block 7 -->
+                                    <div class="wrapper-fw rui-fp-block--7 ">
+                                        <!-- Start - Block -->
+                                        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                                            <!-- Start item -->
+                                            <div class="rui-card-item col mb-4">
+                                                <div class="rui-color-card"
+                                                    style="background-color: #e9edf8; border-radius: 5px">
+                                                    <div class="rui-card-body">
+                                                        <!-- icon -->
+                                                        <div>
+                                                            <svg width="60" height="60" viewBox="0 0 25 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M17.45 12C17.45 14.8995 15.0994 17.25 12.2 17.25C9.30046 17.25 6.94995 14.8995 6.94995 12C6.94995 9.10051 9.30046 6.75 12.2 6.75C15.0994 6.75 17.45 9.10051 17.45 12Z"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M14.7 13C14.7 13.2761 14.4761 13.5 14.2 13.5C13.9238 13.5 13.7 13.2761 13.7 13C13.7 12.7239 13.9238 12.5 14.2 12.5C14.4761 12.5 14.7 12.7239 14.7 13Z"
+                                                                    stroke="currentColor" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                                <path
+                                                                    d="M9.94031 7.02836C7.63854 5.28601 5.78831 4.43988 5.21547 5.01271C4.33767 5.89052 6.79189 9.76794 10.6971 13.6732C14.6024 17.5784 18.4798 20.0327 19.3576 19.1549C19.9442 18.5682 19.0427 16.6419 17.2145 14.2629"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                        <!-- end icon -->
+
+                                                        <h3 class="rui-card-title mt-4">Regular</h3>
+                                                        <p class="rui-card-text">Create your personal and business
+                                                            website now with the regular plan.</p>
+                                                        <a href="https://buy.stripe.com/cN28zlbm65W9dkA002"
+                                                            class="btn btn-sm btn-dark mt-2">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End item -->
+
+                                            <!-- Start item -->
+                                            <div class="rui-card-item col mb-4">
+                                                <div class="rui-color-card"
+                                                    style="background-color: #dcebe7; border-radius: 5px">
+                                                    <div class="rui-card-body">
+
+                                                        <!-- icon -->
+                                                        <div>
+                                                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M12 10.75V13.25M12 10.75H8.75M12 10.75H15.25M12 13.25L9.75 16.25M12 13.25L14.25 16.25M19.25 12C19.25 16.0041 16.0041 19.25 12 19.25C7.99594 19.25 4.75 16.0041 4.75 12C4.75 7.99594 7.99594 4.75 12 4.75C16.0041 4.75 19.25 7.99594 19.25 12Z"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                                <path
+                                                                    d="M12.5 8C12.5 8.27614 12.2761 8.5 12 8.5C11.7239 8.5 11.5 8.27614 11.5 8C11.5 7.72386 11.7239 7.5 12 7.5C12.2761 7.5 12.5 7.72386 12.5 8Z"
+                                                                    stroke="currentColor" stroke-linecap="round"
+                                                                    stroke-linejoin="round"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <!-- end icon -->
+
+                                                        <h3 class="rui-card-title mt-4">Premium</h3>
+                                                        <p class="rui-card-text">Create your personal and business
+                                                            website now with the premium plan.</p>
+                                                        <a href="https://buy.stripe.com/3cs4j5eyickxcgw5kn"
+                                                            class="btn btn-sm btn-dark mt-2">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End item -->
+
+                                            <!-- Start item -->
+                                            <div class="rui-card-item col mb-4">
+                                                <div class="rui-color-card"
+                                                    style="background-color: #002eb3; border-radius: 5px">
+                                                    <div class="rui-card-body" style="color: #fff;">
+
+                                                        <!-- icon -->
+                                                        <div>
+                                                            <svg width="60" height="60" viewBox="0 0 24 24" fill="none"
+                                                                xmlns="http://www.w3.org/2000/svg">
+                                                                <path
+                                                                    d="M10 15.75C10 15.75 11 16.25 12 16.25C13 16.25 14 15.75 14 15.75M9.75 10.75V13.25M7 9.25C5.75736 9.25 4.75 8.24264 4.75 7C4.75 5.75736 5.75736 4.75 7 4.75C8.24264 4.75 9.25 5.75736 9.25 7M17 9.25C18.2426 9.25 19.25 8.24264 19.25 7C19.25 5.75736 18.2426 4.75 17 4.75C15.7574 4.75 14.75 5.75736 14.75 7M14.25 10.75V13.25M18.25 13C18.25 16.4518 15.4518 19.25 12 19.25C8.54822 19.25 5.75 16.4518 5.75 13C5.75 9.54822 8.54822 6.75 12 6.75C15.4518 6.75 18.25 9.54822 18.25 13Z"
+                                                                    stroke="currentColor" stroke-width="1.5"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                        <!-- end icon -->
+
+                                                        <h3 class="rui-card-title mt-4">Unlimited Access</h3>
+                                                        <p class="rui-card-text">Create your personal and business
+                                                            website now with the unlimited access plan.</p>
+                                                        <a href="https://buy.stripe.com/6oE16T75Qbgt2FWaEI"
+                                                            class="btn btn-sm btn-dark mt-2">Buy Now</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End item -->
+
+                                        </div>
+
+
+
+
+                                        <!-- End - Block -->
+
+                                    </div>
+                                    <!-- <hr class="rui-block-hr" /> -->
+                                    <!-- End Block 7 -->
+                                    <!-- Start Block 9 -->
+                                    <div class="wrapper-fw rui-fp-block--9 ">
+                                        <!-- Start - Block - Icons List #2 -->
+                                        <div class="wrapper-fw rui-block-icons-3">
+                                            <div class="w-100 row row-cols-1 row-cols-md-2 row-cols-lg-3">
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                                <!-- Start item -->
+
+                                                <!-- End item -->
+
+                                            </div>
+                                        </div>
+                                        <!-- End - Block - Icons List #2 -->
+
+                                    </div>
+                                    <!-- <hr class="rui-block-hr" /> -->
+                                    <!-- End Block 9 -->
+                                    <!-- Start Block 10 -->
+                                    <div class="wrapper-fw rui-fp-block--10 ">
+                                        <!-- Start - Block - Logotypes #1 -->
+
+                                        <!-- End - Block - Logotypes #1 -->
+
+                                    </div>
+                                    <hr class="rui-block-hr" /><!-- End Block 10 -->
+                                    <!-- Start Block 11 -->
+
+                                    <!-- End Block 11 -->
+                                    <!-- Start Block 17 -->
+                                    <div class="wrapper-fw rui-fp-block--17 ">
+                                        <!-- Start - Block - Stats #2 -->
+                                        <!-- Stats -->
+                                        <div class="wrapper-fw rui-block-stats-1">
+                                            <div class="w-lg-85 mx-lg-auto">
+                                                <div class="row align-items-md-center col-md-divider">
+                                                    <div class="col-md-4">
+                                                        <div class="pr-lg-5 border-right">
+                                                            <div class="d-flex align-items-end">
+                                                                <span class="display-2 text-primary">2x&nbsp;</span>
+                                                                <span class="badge-sm badge-primary mb-4 ml-2">Admin
+                                                                    Tool
+                                                                    v1.0.1<br></span>
+                                                            </div>
+                                                            <p>faster than previous Administration Panel version. 🎈</p>
+                                                        </div>
+                                                    </div>
+                                                    <!-- End Col -->
+
+                                                    <div class="col-md-8 pt-5 pt-md-0">
+                                                        <div class="pl-lg-5">
+                                                            <div class="row">
+                                                                <div class="col-sm"><span
+                                                                        class="h2 text-primary">250+</span>
+                                                                    <p>customers 🎉</p>
+                                                                </div>
+                                                                <!-- End Col -->
+
+                                                                <div class="col-sm"><span class="h2 text-primary">5
+                                                                        stars</span>
+                                                                    <p>people love this panel! ⭐</p>
+                                                                </div>
+                                                                <!-- End Col -->
+
+                                                                <div class="col-sm">
+                                                                    <span class="h2 text-primary">1.0.1</span>
+                                                                    <p>completely redesigned, dedicated for Build and
+                                                                        Run 🚀</p>
+                                                                </div>
+                                                                <!-- End Col -->
+                                                            </div>
+                                                            <!-- End Row -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- End Row -->
+                                        </div>
+                                        <!-- End Stats -->
+                                        <!-- End - Block - Stats #1 -->
+
+                                    </div>
+                                    <hr class="rui-block-hr" />
+                                    <!-- End Block 17 -->
+                                    <!-- Start Block 18 -->
+                                    <div class="wrapper-fw rui-fp-block--18 ">
+                                        <div class="wrapper-md">
+                                            <div class="rui-block-desc">
+                                                <div class="wrapper-md mb-5">
+                                                    <h3 class="rui-block-title">Team</h3>
+                                                    <div class="rui-block-desc text-center">From all over the world, we
+                                                        select
+                                                        individuals with outstanding skills to provide and manage your
+                                                        projects.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div><!-- Start - Block - Team #2 -->
+                                        <div class="wrapper-fw rui-block-team-2">
+                                            <div class="row">
+
+                                                <!-- Start item -->
+                                                <div class="rui-block-team-item text-left col-md-3 px-4 text-center">
+                                                    <img src="./TEAM/amon.png" alt="Team #1" width="200" height="auto"
+                                                        class="img-fluid atto_image_button_middle">
+                                                    <h4 class="lead-4 mt-3 mb-0">Amon</h4>
+                                                    <div class="rui-block-text--3 rui-block-text--light">Web Developer
+                                                        and
+                                                        Software Engineer</div>
+                                                    <div class="rui-block-text--2 mt-2">U.S 🇺🇸</div>
+                                                </div>
+                                                <!-- End item -->
+                                           
+                                                <!-- Start item -->
+                                                <div class="rui-block-team-item text-left col-md-3 px-4 text-center">
+                                                    <img src="./TEAM/lee.png" alt="Team #1" width="200" height="aut0"
+                                                        class="img-fluid atto_image_button_middle">
+                                                    <h4 class="lead-4 mt-3 mb-0">Lee</h4>
+                                                    <div class="rui-block-text--3 rui-block-text--light">Scrum Master
+                                                        and
+                                                        Software Engineer</div>
+                                                    <div class="rui-block-text--2 mt-2">China 🇨🇳</div>
+                                                </div>
+                                                <!-- End item -->
+                                            
+                                                <!-- Start item -->
+                                                <div class="rui-block-team-item text-left col-md-3 px-4 text-center">
+                                                    <img src="./TEAM/andre2.JPG" alt="ku" width="200" height="auto"
+                                                        class="img-fluid atto_image_button_text-bottom">
+                                                    <h4 class="lead-4 mt-3 mb-0">André</h4>
+                                                    <div class="rui-block-text--3 rui-block-text--light">Graphic
+                                                        Designer</div>
+                                                    <div class="rui-block-text--2 mt-2">France 🇫🇷</div>
+                                                </div>
+                                                <!-- End item -->
+                                            
+                                                <!-- Start item -->
+                                                <div class="rui-block-team-item text-left col-md-3 px-4 text-center">
+                                                    <img src="./TEAM/chirag.png" alt="team #3" width="200"
+                                                        height="auto" class="img-fluid atto_image_button_text-bottom">
+                                                    <h4 class="lead-4 mt-3 mb-0">Chirag</h4>
+                                                    <div class="rui-block-text--3 rui-block-text--light">Promotion
+                                                        Specialist
+                                                    </div>
+                                                    <div class="rui-block-text--2 mt-2">India 🇮🇳</div>
+                                                </div>
+                                                <!-- End item -->
+
+                                            </div>
+                                        </div>
+                                        <!-- End - Block - Team #2 -->
+                                        <!-- JOIN US -->
+                                        <div class="rui-block-footer wrapper-fw">
+                                            <hr class="hr-small" />
+                                            <div class="wrapper-md mt-5 text-center">
+                                                <h4 class="lead-4">Join our team!</h4>
+                                                <div class="rui-block-text--2">Help us on our quest to make good
+                                                    software even
+                                                    better.</div>
+                                                <a href="https://www.linkedin.com/company/bandr/"
+                                                    class="btn btn-link">See
+                                                    courrent openings</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr class="rui-block-hr" />
+                                    <!-- JOIN US -->
+                                    <!-- End Block 18 -->
+                                    <!-- Start Block 19 -->
+
+                                    <!-- End Block 19 -->
+                                    <!-- Start Block 4-->
+                                    <div class="wrapper-fw rui-fp-block--4 ">
+                                        <div class="wrapper-md">
+                                            <h3 class="rui-block-title">Help and support</h3>
+                                            <div class="rui-block-desc">You will find all the information you need
+                                                regarding
+                                                your plan on this panel. You can always get in touch with us if you have
+                                                any
+                                                questions regarding how to use our platform. We work hard to make your
+                                                <strong>Build and Run</strong> experience the best possible.
+                                            </div>
+                                        </div>
+                                        <div class="wrapper-fw"></div>
+                                        <div class="wrapper-md mt-6">
+                                            <div class="accordion" id="block4Accordion">
+                                                <div class="accordion-item">
+                                                    <h3 class="accordion-header" id="heading1"><button
+                                                            class="accordion-button collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapse1"
+                                                            aria-expanded="false" aria-controls="collapse1">Lifetime
+                                                            Access</button></h3>
+                                                    <div id="collapse1" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading1" data-parent="#block4Accordion">
+                                                        <div class="accordion-body">
+                                                            <p>Our developer team grants all users access to their
+                                                                domain and
+                                                                MySQL database, as well as enables them to request extra
+                                                                emails,
+                                                                a new subdomain, new logos, and assistance.</p>
+                                                            <h4 id="the-item-support-period">One Year Full Access 🌟
+                                                            </h4>
+                                                            <p>For a whole year, your domain will be hosted on our
+                                                                platform with
+                                                                all of our <strong>Build and Run</strong> advantages
+                                                                available.
+                                                                Depending on the storage you use for your website, your
+                                                                plan may
+                                                                be subject to an increase after a year. Our team will
+                                                                continue
+                                                                to offer all of its services, and updates will be given
+                                                                while
+                                                                you run.
+                                                            </p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h3 class="accordion-header" id="heading2"><button
+                                                            class="accordion-button collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapse2"
+                                                            aria-expanded="false" aria-controls="collapse2">Are updates
+                                                            and bug
+                                                            fixes included in the cost of the Plan?</button></h3>
+                                                    <div id="collapse2" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading2" data-parent="#block4Accordion">
+                                                        <div class="accordion-body">
+                                                            <p>Regardless of whether you have support or not:</p>
+                                                            <ul class="list-styled">
+                                                                <li>When we release an update, it will be available for
+                                                                    you all
+                                                                    over our platform</li>
+                                                                <li>You can report bugs</li>
+                                                                <li>You can expect us to keep all updates in good
+                                                                    working order,
+                                                                    working as described and protected against major
+                                                                    security
+                                                                    issues</li>
+                                                            </ul>
+                                                            <p class="text-muted small"></p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="accordion-item">
+                                                    <h3 class="accordion-header" id="heading3"><button
+                                                            class="accordion-button collapsed" type="button"
+                                                            data-toggle="collapse" data-target="#collapse3"
+                                                            aria-expanded="false" aria-controls="collapse3">Can I extend
+                                                            or
+                                                            renew my plan?</button></h3>
+                                                    <div id="collapse3" class="accordion-collapse collapse"
+                                                        aria-labelledby="heading3" data-parent="#block4Accordion">
+                                                        <div class="accordion-body">
+                                                            <h4>Renewal</h4>
+                                                            <p>Every month, consumers' chosen plans are all
+                                                                automatically
+                                                                renewed.</p>
+                                                            <ul class="list-styled">
+                                                                <li>Each client will receive a bill on their start date
+                                                                    and each
+                                                                    month on the same day.</li>
+                                                                <li>The client can be charged late fees if their payment
+                                                                    does
+                                                                    not go through at the scheduled time for their
+                                                                    monthly
+                                                                    payment.
+                                                                </li>
+                                                                <li>The domain will be closed if the client's payment is
+                                                                    overdue
+                                                                    for more than a week and the client doesn't respond.
+                                                                </li>
+                                                            </ul>
+                                                            <p class="text-muted small"></p>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><!-- accortion-->
+                                        </div><!-- wrapper-md -->
+                                        <div class="rui-block-footer wrapper-md">
+                                            <div class="wrapper-md text-center">
+                                                <hr class="hr-small">
+                                                <h3 class="lead-4">Didn't find an answer?</h3>
+                                                <p>Get in touch with <strong>Build and Run</strong> for details on setup
+                                                    and
+                                                    additional plan services</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End Block 4 -->
+
+                                </div>
+                            </div>
+
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FOOTER  -->
+
+            <footer id="s-page-footer" class="wrapper-page">
+                <div class=" wrapper-xl">
+
+                    <div class="rui-footer-content rui-footer-block--1">
+                        <div class="mb-5">
+                            <p>On the platform known as <strong>Build and Run</strong>, all internet users have access
+                                to a
+                                variety of services. These Terms of Use have been agreed to by <strong>you</strong> and
+                                <strong>Build and Run</strong>.
+                            </p>
+
+                            <ol class="px-4 mt-3">
+                                <li>Never share your personal password to strangers or hackers posing as the Build and
+                                    Run team.
+                                </li>
+                                <li>Changes that you are unsure about should not be made because they could destabilize
+                                    the
+                                    entire system. When unsure, always ask for assistance.</li>
+                                <li>Always communicate with our team and give feedback on how we can improve our work.
+                                </li>
+                            </ol>
+
+
+                        </div>
+                    </div>
+                    <hr class="rui-footer-hr--1" />
+
+                    <div class="rui-footer-content rui-footer-block--2">
+                        <div class="rui-footer-nav row text-sm-center text-md-left my-5">
+                            <div class="col-sm-12 col-md-6 col-lg my-sm-2 my-md-0">
+                                <h5 class="rui-footer-nav-title">Company</h5>
+                                <ul class="rui-footer-nav-items list-unstyled mb-0">
+                                    <li> <a href="https://www.linkedin.com/company/bandr/">Linkedin</a> </li>
+                                    <li> <a href="https://app.brstore.us">Blog</a><span
+                                            class="badge-xs badge-success ml-2">New</span> </li>
+                                    <li> <a href="https://technology.brstore.us/pricing/">FAQ</a> </li>
+                                    <li> <a href="mailto:support@brstore.us">Contact</a> </li>
+                                    <li> <a href="https://support.brstore.us">Help</a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg my-sm-2 my-md-0">
+                                <h5 class="rui-footer-nav-title">Projects</h5>
+                                <ul class="rui-footer-nav-items list-unstyled mb-0">
+                                    <li> <a href="https://media.brstore.us/">Media Panel</a> </li>
+                                    <li> <a href="https://technology.brstore.us/password-generator/">Password
+                                            Generator</a>
+                                    </li>
+                                    <li> <a href="https://technology.brstore.us/simple-logo/">Logo and Favicon
+                                            Generator</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg my-sm-2 my-md-0">
+                                <h5 class="rui-footer-nav-title">Legal</h5>
+                                <ul class="rui-footer-nav-items list-unstyled mb-0">
+                                    <li> <a href="https://www.brstore.us/privacy.php">Privacy Policy</a> </li>
+                                    <li> <a href="https://www.brstore.us/terms.php">Terms of Service</a> </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg my-sm-2 my-md-0">
+                                <h5 class="rui-footer-nav-title">Office</h5>
+                                <ul class="rui-footer-nav-items list-unstyled mb-0">
+                                    <li>
+                                        <p> Main Street </p>
+                                    </li>
+                                    <li> Dallas, Texas, USA. </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="rui-footer-hr--2" />
+
+                    <div class="rui-footer-content  rui-footer-block--3">
+                        Follow us on all of our socials:
+                        <a href="#">Instagram</a>,
+                        <a href="https://www.facebook.com/brstore.us/">Facebook</a>,
+                        <a href="https://twitter.com/brstore_us">Twitter</a>
+                    </div>
+                    <hr class="rui-footer-hr--3" />
+
+                    <div class="w-100">
+                        <ul class="rui-footer--contact">
+                            <li>
+                                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-linecap="round"
+                                        stroke-linejoin="round" stroke-width="1.5"></circle>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M15.25 12C15.25 16.5 13.2426 19.25 12 19.25C10.7574 19.25 8.75 16.5 8.75 12C8.75 7.5 10.7574 4.75 12 4.75C13.2426 4.75 15.25 7.5 15.25 12Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" d="M5 12H12H19"></path>
+                                </svg>
+                                <a class="ml-1" href="https://brstore.us" target="_blank">Build and Run</a>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M15.2502 19.25H8.75C7.64543 19.25 6.75 18.3546 6.75 17.25V6.75C6.75 5.64543 7.64543 4.75 8.75 4.75H15.2502C16.3548 4.75 17.2502 5.64543 17.2502 6.75V17.25C17.2502 18.3546 16.3548 19.25 15.2502 19.25Z"
+                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                    </path>
+                                    <path d="M11.75 16.75H12.25" stroke="currentColor" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                <span class="ml-1">Mobile: +1 (949) 779-4488</span>
+                            </li>
+                            <li>
+                                <svg width="18" height="18" fill="none" viewBox="0 0 24 24">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5"
+                                        d="M4.75 7.75C4.75 6.64543 5.64543 5.75 6.75 5.75H17.25C18.3546 5.75 19.25 6.64543 19.25 7.75V16.25C19.25 17.3546 18.3546 18.25 17.25 18.25H6.75C5.64543 18.25 4.75 17.3546 4.75 16.25V7.75Z">
+                                    </path>
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="1.5" d="M5.5 6.5L12 12.25L18.5 6.5"></path>
+                                </svg>
+                                <a class="ml-1" href="mailto:support@brstore.us">support@brstore.us</a>
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="rui-footer-copy rui-footer-content">
+                        <p><strong>Copyright © 2022 Build and Run. All right reserved.</strong></p>Administration Panel
+                        v1.0.1
+                        made with love ♥️
+                    </div>
+
+                    <div class="mt-3 text-sm-center text-md-left">
+                        <div id="course-footer"></div>
+
+                        <div class="rui-footer-btns">
+
+
+                            <div class="suportemail"><a href="#"><span class="rui-icon-container"><img class="icon "
+                                            alt="" aria-hidden="true"
+                                            src="theme/image.php/space/core/1664284111/t/email.svg" /></span>Contact
+                                    Panel
+                                    Support</a></div>
+                        </div>
+
+                        <div class="rui-footer-btns">
+                            <div class="tool_dataprivacy"><a
+                                    href="https://www.dmca.com/compliance/brstore.us">DMCA.com</a>
+                            </div>
+                        </div>
+                        <div class="rui-debug rui-footer-btns w-100 d-block my-2 small"></div>
+                    </div>
+                    <div class="tool_usertours-resettourcontainer"></div>
+
+                </div>
+            </footer>
+
+            <!-- FOOTER  -->
+
+
+
+            <script>
+                //<![CDATA[
+                var require = {
+                    baseUrl: 'https://roseathemes.com/space/1/lib/requirejs.php/1664284111/',
+                    // We only support AMD modules with an explicit define() statement.
+                    enforceDefine: true,
+                    skipDataMain: true,
+                    waitSeconds: 0,
+
+                    paths: {
+                        jquery: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/jquery/jquery-3.6.0.min',
+                        jqueryui: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/jquery/ui-1.13.0/jquery-ui.min',
+                        jqueryprivate: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/requirejs/jquery-private'
+                    },
+
+                    // Custom jquery config map.
+                    map: {
+                        // '*' means all modules will get 'jqueryprivate'
+                        // for their 'jquery' dependency.
+                        '*': { jquery: 'jqueryprivate' },
+                        // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+                        '*': { process: 'core/first' },
+
+                        // 'jquery-private' wants the real jQuery module
+                        // though. If this line was not here, there would
+                        // be an unresolvable cyclic dependency.
+                        jqueryprivate: { jquery: 'jquery' }
+                    }
+                };
+
+//]]>
+            </script>
+            <script src="https://manage.brstore.us/function/lib/requirejs/javascript.php.js"></script>
+            <script>
+                //<![CDATA[
+                M.util.js_pending("core/first");
+                require(['core/first'], function () {
+                    require(['core/prefetch'])
+                        ;
+                    require(["media_videojs/loader"], function (loader) {
+                        loader.setUp('en');
+                    });;
+                    M.util.js_pending('theme_space/rui'); require(['theme_space/rui'], function (amd) { amd.init(); M.util.js_complete('theme_space/rui'); });;
+
+                    require(['jquery', 'core/custom_interaction_events'], function ($, CustomEvents) {
+                        CustomEvents.define('#single_select6347773e7cee53', [CustomEvents.events.accessibleChange]);
+                        $('#single_select6347773e7cee53').on(CustomEvents.events.accessibleChange, function () {
+                            var ignore = $(this).find(':selected').attr('data-ignore');
+                            if (typeof ignore === typeof undefined) {
+                                $('#single_select_f6347773e7cee52').submit();
+                            }
+                        });
+                    });
+                    ;
+
+                    require(['core/moremenu'], function (moremenu) {
+                        moremenu(document.querySelector('#moremenu-topbar'));
+                    });
+                    ;
+
+                    M.util.js_pending('theme_space/loader');
+                    require(['theme_space/loader', 'theme_space/drawer'], function (Loader, Drawer) {
+                        Drawer.init();
+                        M.util.js_complete('theme_space/loader');
+                    });
+                    ;
+                    M.util.js_pending('core/notification'); require(['core/notification'], function (amd) { amd.init(2, []); M.util.js_complete('core/notification'); });;
+                    M.util.js_pending('core/log'); require(['core/log'], function (amd) { amd.setConfig({ "level": "warn" }); M.util.js_complete('core/log'); });;
+                    M.util.js_pending('core/page_global'); require(['core/page_global'], function (amd) { amd.init(); M.util.js_complete('core/page_global'); });;
+                    M.util.js_pending('core/utility'); require(['core/utility'], function (amd) { M.util.js_complete('core/utility'); });
+                    M.util.js_complete("core/first");
+                });
+//]]>
+            </script>
+            <script>
+                //<![CDATA[
+                M.str = { "moodle": { "lastmodified": "Last modified", "name": "Name", "error": "Error", "info": "Information", "yes": "Yes", "no": "No", "cancel": "Cancel", "confirm": "Confirm", "areyousure": "Are you sure?", "closebuttontitle": "Close", "unknownerror": "Unknown error", "file": "File", "url": "URL", "collapseall": "Collapse all", "expandall": "Expand all" }, "repository": { "type": "Type", "size": "Size", "invalidjson": "Invalid JSON string", "nofilesattached": "No files attached", "filepicker": "File picker", "logout": "Logout", "nofilesavailable": "No files available", "norepositoriesavailable": "Sorry, none of your current repositories can return files in the required format.", "fileexistsdialogheader": "File exists", "fileexistsdialog_editor": "A file with that name has already been attached to the text you are editing.", "fileexistsdialog_filemanager": "A file with that name has already been attached", "renameto": "Rename to \"{$a}\"", "referencesexist": "There are {$a} links to this file", "select": "Select" }, "admin": { "confirmdeletecomments": "You are about to delete comments, are you sure?", "confirmation": "Confirmation" }, "debug": { "debuginfo": "Debug info", "line": "Line", "stacktrace": "Stack trace" }, "langconfig": { "labelsep": ": " } };
+//]]>
+            </script>
+            <script>
+                //<![CDATA[
+                (function () {
+                    Y.use("moodle-filter_mathjaxloader-loader", function () {
+                        M.filter_mathjaxloader.configure({ "mathjaxconfig": "\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n", "lang": "en" });
+                    });
+                    M.util.help_popups.setup(Y);
+                    M.util.js_pending('random6347773e7cee55'); Y.on('domready', function () { M.util.js_complete("init"); M.util.js_complete('random6347773e7cee55'); });
+                })();
+//]]>
+            </script>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

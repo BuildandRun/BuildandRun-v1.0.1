@@ -1,0 +1,14 @@
+BEGIN:VCARD
+VERSION:3.0
+PRODID:-//Apple Inc.//macOS 12.2.1//EN
+N:;Build and Run;;;
+FN:
+EMAIL;type=INTERNET;type=WORK;type=pref:support@brstore.us
+TEL;type=CELL;type=VOICE;type=pref:+14692151582
+item1.URL;type=pref:https://brstore.us
+item1.X-ABLabel:_$!<HomePage>!$_
+X-IMAGEHASH:csDr8QYuWEPbP8gmc68pCQ==
+X-IMAGETYPE:PHOTO
+X-ABShowAs:COMPANY
+REV:2022-11-27T02:29:47Z
+END:VCARD

@@ -1,0 +1,430 @@
+
+
+
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Adminstration : Log in Portal</title>
+
+   <!-----------------------------
+
+      B&R | Administration Panel
+
+      Copyright © 2022
+
+    -------------------------------->
+
+    <meta name="theme-color" content="#fff">
+
+    <link rel="shortcut icon" href="https://manage.brstore.us/function/image.php/space/theme/1664284111/favicon.ico" />
+    
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="keywords" content="moodle, Space 2.1: Log in to the site" />
+<link rel="stylesheet" type="text/css" href="https://manage.brstore.us/function/combo.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://manage.brstore.us/function/styles.php.css" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/roseathemes.com\/space\/1","homeurl":{},"sesskey":"DVue8xn3xt","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1664284111","slasharguments":1,"theme":"space","iconsystemmodule":"core\/icon_system_standard","jsrev":"1664284111","admin":"admin","svgicons":true,"usertimezone":"America\/New_York","courseId":1,"courseContextId":2,"contextid":1,"contextInstanceId":0,"langrev":1665480724,"templaterev":"1664284111"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?m\/1664284111\/","combine":true,"comboBase":"https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?","ext":false,"root":"m\/1664284111\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-format_trail-trailkeys":{"requires":["event-nav-keys"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bazsnippets-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-beautify":{},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_linkadv-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/roseathemes.com\/space\/1\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/roseathemes.com\/space\/1\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1664284111\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/roseathemes.com\/space\/1\/lib\/javascript.php\/1664284111\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/roseathemes.com\/space\/1\/lib\/javascript.php\/1664284111\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+
+<meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&amp;display=swap" rel="stylesheet">
+
+
+</head>
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-en yui-skin-sam yui3-skin-sam roseathemes-com--space-1 pagelayout-login course-1 context-1 notloggedin rui-login-page rui-login-layout-3">
+    <div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://manage.brstore.us/function/lib/polyfills/javascript.php.js"></script>
+<script src="https://manage.brstore.us/function/combo.js"></script><script src="https://manage.brstore.us/function/lib/javascript.php.js"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+    
+    <div class="rui-login-lang-wrapper"><div class="rui-navbar-lang dropdown">
+    <button class="rui-topbar-btn rui-lang-btn" id="drop-down-63477746a7e5863477746a78de4" data-toggle="dropdown" aria-haspopup="true" role="button" aria-label="Languages" aria-expanded="false">
+        <svg class="ml-md-2" width="24" height="24" fill="none" viewBox="0 0 24 24">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M5.75 19.25L5.75 13.25M5.75 13.25L5.75 5.75C5.75 5.75 8.5 3.5 12 5.75C15.5 8 18.25 5.75 18.25 5.75L18.25 13.25C18.25 13.25 15.5 15.5 12 13.25C8.5 11 5.75 13.25 5.75 13.25Z"></path>
+        </svg>
+        <span class="rui-lang-btn-text ml-2 mr-2 text-uppercase">en</span>
+    </button>
+    <div class="dropdown-menu" aria-labelledby="drop-down-63477746a7e5863477746a78de4">
+                <a class="dropdown-item" href="#" title="Language">English ‎(en)‎ 🇺🇸</a>
+                <a class="dropdown-item" href="https://manage.brstore.us/flag/fr.html" title="Language">French ‎(fr)‎ 🇫🇷</a>
+                <a class="dropdown-item" href="https://manage.brstore.us/flag/es.html" title="Language">Spanish ‎(es) 🇪🇸‎</a>
+           
+    </div>
+</div></div>
+
+    <div id="page-login" class="container-fluid p-0 mt-md-5 mt-lg-0">
+        <div id="page-content" class="row no-gutters">
+            <div id="region-main-box" class="col-12">
+                <section id="region-main" aria-label="Content">
+                <div class="login-wrapper">
+                    <div class="login-container">
+                    <div class="main-content" role="main"><span id="maincontent"></span><div class="rui-login-layout 
+        rui-login-layout-img 
+         
+         
+        
+        
+        rui-login-layout--3
+        
+        
+        ">
+
+         
+            <div class="rui-login-top-btn">
+                <form action="mailto:support@brstore.us?subject=Access to Build and Run Admin Portal" method="get" id="signup">
+                    <span class="rui-login-calabel ml-1">Don't have an account?</span> <button type="submit" class="btn-link--clean mx-2">Submit a ticket</button>
+                </form>
+            </div>
+
+
+            <div class="rui-login-wrapper">
+                <div class="rui-login-top-wrapper">
+
+           
+            
+                </div>
+            </div>
+
+            <div class="rui-login-wrapper row no-gutters align-items-center justify-content-center w-100">
+                <div class="rui-login-container row no-gutters">
+
+
+                    <div class="rui-login-box">
+                        <div class="rui-login-content">
+                                <div class="sr-only">
+                                    <a href="signup.php.html">Skip to create new account</a>
+                                </div>
+
+                            <div class="rui-loginpage-intro">
+                                <div class="rui-loginpage-intro-logo">
+                                    <a href="./index.html"><h2><img src="https://manage.brstore.us/function/olo.png" title="Build and Run" alt="Build and Run" class="rui-login-logo img-fluid"/></h2></a>
+
+                                </div>
+
+                                <div class="rui-loginpage-intro-content mb-3 text-center">
+                                    <div class="alert alert-warning">Hi there!<br>
+                                        Use the login information our team has given you to log in.
+    <!-- <br>Login: <strong>student</strong>, password: <strong>Demo123#</strong> -->
+</div>
+<hr class="hr-small">
+         
+         
+                                </div>
+      
+                            </div>
+
+
+                    <!-- LOGIN   -->
+                   <!-- #####################################################################
+                   #####################################################################
+
+                   #####################################################################
+                   ##################################################################### -->
+                   <!-- LOGIN   -->
+                   <!-- <div class="rui-login-form"> -->
+ 
+                            <main id="content" class="site-main post-2620 page type-page status-publish hentry" role="main">
+                                <header class="page-header">
+                                <h1 class="entry-title">Login</h1>		</header>
+                            <div class="page-content">
+                            
+                    <div class="um um-login um-2616">
+                    
+                        <div class="um-form">
+                    
+                            <form method="post" action="" autocomplete="off">
+                    
+                                <div class="um-row _um_row_1 " style="margin: 0 0 30px 0;"><div class="um-col-1"><div  id="um_field_2616_username" class="um-field um-field-text  um-field-username um-field-text um-field-type_text" data-key="username"><div class="um-field-label"><label for="username-2616">Username or E-mail</label><div class="um-clear"></div></div><div class="um-field-area"><input  autocomplete="off" class="um-form-field valid " type="text" name="username-2616" id="username-2616" value="" placeholder="" data-validate="unique_username_or_email" data-key="username" />
+                    
+                                            </div></div><div  id="um_field_2616_user_password" class="um-field um-field-password  um-field-user_password um-field-password um-field-type_password" data-key="user_password"><div class="um-field-label"><label for="user_password-2616">Password</label><div class="um-clear"></div></div><div class="um-field-area"><input class="um-form-field valid " type="password" name="user_password-2616" id="user_password-2616" value="" placeholder="" data-validate="" data-key="user_password" />
+                    
+                                            </div></div></div></div>		<input type="hidden" name="form_id" id="form_id_2616" value="2616" />
+                        
+                        <p class="um_request_name">
+                            <label for="um_request_2616">Only fill in if you are not human</label>
+                            <input type="hidden" name="um_request" id="um_request_2616" class="input" value="" size="25" autocomplete="off" />
+                        </p>
+                    
+                        <input type="hidden" id="_wpnonce" name="_wpnonce" value="3689e19ce1" /><input type="hidden" name="_wp_http_referer" value="/login/" />
+                        <div class="um-col-alt">
+                    
+                            
+                    
+                                <div class="um-field um-field-c">
+                                    <div class="um-field-area">
+                                        <label class="um-field-checkbox">
+                                            <input type="checkbox" name="rememberme" value="1"  />
+                                            <span class="um-field-checkbox-state"><i class="um-icon-android-checkbox-outline-blank"></i></span>
+                                            <span class="um-field-checkbox-option"> Keep me signed in</span>
+                                        </label>
+                                    </div>
+                                </div>
+                    
+                                            <div class="um-clear"></div>
+                            
+                                <div class="um-left um-half">
+                                    <input type="submit" value="Login" class="um-button" id="um-submit-btn" />
+                                </div>
+                                <div class="um-right um-half">
+                                    <a href="https://host.brstore.us/register/" class="um-button um-alt">
+                                        Register				</a>
+                                </div>
+                    
+                            
+                            <div class="um-clear"></div>
+                    
+                        </div>
+                    
+                        
+                        <div class="um-col-alt-b">
+                            <a href="https://host.brstore.us/password-reset/" class="um-link-alt">
+                                Forgot your password?		</a>
+                        </div>
+                    
+                        
+                            </form>
+                    
+                        </div>
+                    
+                    </div><style type="text/css">
+                    .um-2616.um {
+                        max-width: 450px;
+                    }</style>
+                    
+                    </div> 
+                   <!-- LOGIN   -->
+                   <!-- #####################################################################
+                   #####################################################################
+
+                   #####################################################################
+                   ##################################################################### -->
+                   <!-- LOGIN   -->
+
+
+                    
+                    
+                    
+            
+                            <!-- .rui-login-form -->
+
+
+                            <div class="rui-login-additional-btns">
+                                <div class="rui-canloginasguest mt-2" title="Some courses may allow guest access">
+                                    <p class="small text-center">Browse all of our plans</p>
+                                    <form action="https://technology.brstore.us/pricing/" method="post" id="guestlogin">
+                                        <input type="hidden" name="logintoken" value="GyZBDmOYeWNB3LsEY47S5Ua4Y0oQ9Pzf">
+                                        <input type="hidden" name="username" value="guest" />
+                                        <input type="hidden" name="password" value="guest" />
+                                        <button class="btn btn-sm btn-outline-secondary w-100" type="submit">Purchase a domain</button>
+                                    </form>
+                                </div>
+                            </div><!-- .rui-additional-btns -->
+                            
+
+
+
+
+                                <div class="rui-hasinstructions-desc alert alert-info">
+                                    You must first purchase a website in order to have complete access to this portal.
+                                </div><!-- .rui-hasinstructions-desc -->
+
+                        </div><!-- .rui-login-content -->
+                    </div><!-- .rui-login-box -->
+
+                    <div class="rui-login-bg-container" style="background-image: url('https://manage.brstore.us/function/login-background.jpg');">
+                    </div>
+               
+                </div>
+            </div>
+
+            <div class="rui-login-wrapper">
+
+                <div class="rui-login-footer text-center">
+                <p class="small mb-0 text-center">Copyright © <strong>Build and Run</strong>. All right reserved.
+    <br>Administration Panel v1.0.1 made with love ♥️
+</p>
+                </div>
+                
+            </div>
+
+            <button type="button" class="btn btn-xs btn-dark btn--cookie"  data-modal="alert" data-modal-title-str='["cookiesenabled", "core"]'  data-modal-content-str='["cookiesenabled_help_html", "core"]'>
+            <svg width="20" height="20" fill="none" viewBox="0 0 24 24">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 13V15"></path>
+                <circle cx="12" cy="9" r="1" fill="currentColor"></circle>
+                <circle cx="12" cy="12" r="7.25" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"></circle>
+            </svg>
+
+            <span class="ml-1">Cookies notice</span></button>
+
+        </div><!-- .login layout -->
+
+
+
+<script>
+        const togglePassword = document.querySelector("#togglePassword");
+        const password = document.querySelector("#password");
+
+        togglePassword.addEventListener("click", function () {
+            // toggle the type attribute
+            const type = password.getAttribute("type") === "password" ? "text" : "password";
+            password.setAttribute("type", type);
+            
+            // toggle the icon
+            this.classList.toggle("rui-show-password-btn--hidden");
+        });
+    </script></div>
+                    </div>
+                </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+    
+    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://roseathemes.com/space/1/lib/requirejs.php/1664284111/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/jquery/jquery-3.6.0.min',
+        jqueryui: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/jquery/ui-1.13.0/jquery-ui.min',
+        jqueryprivate: 'https://roseathemes.com/space/1/lib/javascript.php/1664284111/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="https://manage.brstore.us/function/lib/requirejs/javascript.php.js"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+require(['jquery', 'core/custom_interaction_events'], function($, CustomEvents) {
+    CustomEvents.define('#single_select63477746a78de3', [CustomEvents.events.accessibleChange]);
+    $('#single_select63477746a78de3').on(CustomEvents.events.accessibleChange, function() {
+        var ignore = $(this).find(':selected').attr('data-ignore');
+        if (typeof ignore === typeof undefined) {
+            $('#single_select_f63477746a78de2').submit();
+        }
+    });
+});
+;
+
+M.util.js_pending('theme_space/loader');
+require(['theme_space/loader'], function() {
+  M.util.js_complete('theme_space/loader');
+});
+;
+
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(1, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random63477746a78de9'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random63477746a78de9'); });
+})();
+//]]>
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

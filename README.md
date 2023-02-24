@@ -20,7 +20,6 @@
 -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
@@ -30,23 +29,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Build and Run v1.0.1</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
+    The initial release of Build and Run's Web App
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <a href="https://brstore.ddns.net"><strong>Explore Version 1.0.1»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
+    <a href="http://brstore.ddns.net">DNS Mask</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
+    <a href="http://107.22.108.84">Public IP</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="http://172.26.9.99">Private IP</a>
   </p>
 </div>
 
@@ -63,18 +62,18 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Getting Started</a>
+      <a href="#getting-started">Clone the Build and Run Repository: Step-by-Step Guide</a>
       <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
+        <li></li>
+        <li></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
+    <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    <li><a href="#buildandrun">Build and Run</a></li>
   </ol>
 </details>
 
@@ -83,18 +82,15 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+Welcome to Build and Run v1.0.1 - your ultimate partner for all your technology needs! We are excited to announce the initial release of our platform, which offers a wide range of services including Website and Application Development, Design, Arts, Social Media Marketing, News, Tweaks, and more.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+At Build and Run, we are committed to delivering exceptional services that meet the unique needs of our clients. With our team of highly skilled individuals from all over the world, we are confident in our ability to provide top-notch solutions that exceed your expectations.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+Our platform is designed to keep you updated on every step of the process, ensuring that your project is delivered on time and to your satisfaction. We pride ourselves on being the world's largest technology company and Glossary, offering the latest and most innovative solutions to our clients.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+Join us on this journey and let us help you build and run your dream project. Get in touch with us today and discover the endless possibilities that Build and Run v1.0.1 has to offer.
 
-Use the `BLANK_README.md` to get started.
+Let's take your technology project to the next level! 🔥🚀
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -102,98 +98,81 @@ Use the `BLANK_README.md` to get started.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+At Build and Run, we take pride in delivering exceptional technology solutions that meet the unique needs of our clients. Our platform, Build and Run v1.0.1, was built with a combination of HTML, JavaScript, PHP, and CSS - the building blocks of modern web development.
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+* [![html][html]][html]
+* [![javscript][javascript]][havscript]
+* [![php][php]][php]
+* [![css][css]][css]
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Clone the Build and Run Repository: Step-by-Step Guide
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+Welcome to the Build and Run repository - your one-stop solution for all your technology needs! If you're looking to clone our repository, you've come to the right place.
 
-### Prerequisites
+Here's a step-by-step guide on how to clone the Build and Run repository:
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
-### Installation
-
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
+1. First, make sure you have Git installed on your machine. If you don't, you can download it from the official Git website.
+2. Next, open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+3. Clone the repo
    ```sh
-   git clone https://github.com/your_username_/Project-Name.git
+   git clone https://github.com/BuildandRun/BuildandRun-v1.0.1.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```js
-   const API_KEY = 'ENTER YOUR API';
-   ```
+Make sure to replace <username> with the Build and Run username and <repository> with the name of the repository you want to clone.
+
+4. Press enter and Git will start cloning the repository.
+
+
+5. Once the cloning process is complete, you will have the Build and Run repository on your local machine, ready for you to use!
+
+We hope this guide has been helpful in cloning the Build and Run repository. If you have any further questions or concerns, please don't hesitate to reach out to us.
+
+Thank you for choosing Build and Run - your ultimate partner for all your technology needs!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
+- [x] Store
+- [x] Tech
+    - [x] Projects
+    - [x] Glossary
+    - [x] Pricing
+    - [x] Service
+- [x] Partners
+- [x] Media Panel
+    - [x] Get Verified
+- [x] Admin Panel
+    - [x] Portal
+    - [x] Dashboard
+    - [x] Guide
 
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
+
+See the [open issues](https://github.com/BuildandRun/BuildandRun-v1.0.1/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- CONTRIBUTING -->
-## Contributing
+## Contribution
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+We understand that building and running online platforms can be a challenging task. That's why we created Build and Run - to make your life easier by handling all aspects of your online presence, from website and application development to design, social media marketing, news, tweaks, and more.
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+Our team of experts is dedicated to delivering the highest quality services, ensuring that your project is delivered on time and to your satisfaction. With Build and Run, you can rest assured that we have everything under control, allowing you to focus on what matters most to you.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Join us on this journey and let us help you create an online presence that stands out from the crowd. Contact us today to learn more about how we can help you build and run your dream project effortlessly.
+
+Thank you for choosing Build and Run - where online surfing is made effortless!
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -202,7 +181,7 @@ Don't forget to give the project a star! Thanks again!
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under DMCA Compliance. See [B&R LLC](https://www.dmca.com/compliance/brstore.us) for more information.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -211,27 +190,27 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+Email 📩 : [support@brstore.us](mailto:support@brstore.us)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+Tel 📞 : [+1 (469) 215-1582](+14692151582)
+
+GitHub 🤝 : [https://github.com/your_username/repo_name](https://github.com/BuildandRun)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
 
 <!-- ACKNOWLEDGMENTS -->
-## Acknowledgments
+## Build and Run
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+Learn How To Get Started
+
+* [FAQs](./tech/pricing/index.html)
+* [Privacy Policy](./privacy.php)
+* [Terms Of Use](./terms.php)
+
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -239,18 +218,18 @@ Use this space to list resources you find helpful and would like to give credit 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
+[contributors-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
+[contributors-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
+[forks-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
+[forks-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
+[stars-url]: https://brstore.us
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
+[issues-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[license-url]: https://www.dmca.com/compliance/brstore.us
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://www.linkedin.com/company/bandr/
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/

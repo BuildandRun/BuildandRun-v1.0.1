@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <link rel="icon" type="image/png" sizes="32x32" href="bandr/faviconBR.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="bandr/faviconBR.png">
+    <title>Media Panel - Marketing 🚀</title>
+    <style>
+        html,
+        body {
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        #dialogText {
+            color: white;
+            background-color: #333333;
+        }
+
+        #dialogWrap {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: table;
+            background-color: #EEEEEE;
+        }
+
+        #dialogWrapCell {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        #mainDialog {
+            max-width: 400px;
+            margin: 5px;
+            border: solid #AAAAAA 1px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px 3px #AAAAAA;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #FFFFFF;
+            overflow: hidden;
+            text-align: left;
+        }
+
+        #mainDialog>* {
+            padding: 10px 30px;
+        }
+
+        #passArea {
+            padding: 20px 30px;
+            background-color: white;
+        }
+
+        #passArea>* {
+            margin: 5px auto;
+        }
+
+        #pass {
+            width: 90%;
+            height: 40px;
+            font-size: 30px;
+
+        }
+
+        #messageWrapper {
+            float: left;
+            vertical-align: middle;
+            line-height: 30px;
+        }
+
+        .notifyText {
+            display: none;
+        }
+
+        #invalidPass {
+            color: red;
+        }
+
+        #success {
+            color: green;
+        }
+
+        #submitPass {
+            font-size: 20px;
+            border-radius: 5px;
+            background-color: #E7E7E7;
+            border: solid gray 1px;
+            float: right;
+            cursor: pointer;
+        }
+
+        #contentFrame {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        #attribution {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 0.8em;
+        }
+
+        #attribution,
+        #attribution a {
+            color: #999;
+        }
+
+        .error {
+            display: none;
+            color: red;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 0.7em 1.4em;
+            margin: 0 0.3em 0.3em 0;
+            border-radius: 0.15em;
+            box-sizing: border-box;
+            text-decoration: none;
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase;
+            font-weight: 400;
+            color: #FFFFFF;
+            background-color: #3369ff;
+            box-shadow: inset 0 -0.6em 0 -0.35em rgba(0, 0, 0, 0.17);
+            text-align: center;
+            position: relative;
+        }
+        .button:active {
+            top:0.1em;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
+    <div id="dialogWrap">
+        <div id="dialogWrapCell">
+            <p style="text-align:center;"><img src="bandr/ABOUT-US/about-bnr.png" width="20%" height="auto"></p>
+            <div class="stage-small">Introducing The Future</div>
+      <h2 class="community__title h2">Welcome To The Media Panel</h2>
+            <div id="mainDialog">
+                <div id="dialogText" style="text-align:center;">This page is password protected.</div>
+                <div id="passArea">
+                    <p id="passwordPrompt">Eɴᴛᴇʀ Pᴀssᴡᴏʀᴅ</p>
+                    <input id="pass" type="password" placeholder="ᴾᵃˢˢʷᵒʳᵈ" name="pass" autofocus>
+                    <div>
+                        <span id="messageWrapper">
+                            <span id="invalidPass" class="error">The password you entered is incorrect. ㅤㅤㅤㅤ
+                                Sorry, please try again.</span>
+                            <span id="invalidPass" class="error">Sorry, please try again.</span>
+                            <span id="trycatcherror" class="error">Sorry, something went wrong.</span>
+                            <span id="success" class="notifyText">Success!</span>
+                            &nbsp;
+                        </span>
+                        <p>
+                        </div>
+                        <div class="main__btns"><a class=" main__button"
+                                href="mailto:support@brstore.us?subject=Forgot Password To Media Panel [Build and Run]">Forgot
+                                password?</a></div>
+                        </p>
+                        <button id="submitPass" class="button" type="button" style="background-color:#668fff">Lᴏɢiɴ</button>
+                        <div style="clear: both;"></div>
+                    </div>
+                </div>
+                <div id="securecontext" class="error">
+                    <p>
+                        Sorry, but password protection only works over a secure connection. Please load this page via
+                        HTTPS. <a href="https://media.brstore.us">Click Here</a>
+                    </p>
+                </div>
+                <div id="nocrypto" class="error">
+                    <p>
+                        Your web browser appears to be outdated. Please visit this page using a modern browser.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="attribution">
+        Protected by <a href="https://brstore.us">Build and Run</a>
+    </div>
+    <script>
+
+    ========FOOTER=======
+
+     <!-- !language english and french! -->
+  <script type="text/javascript" src="https://cdn.weglot.com/weglot.min.js"></script>
+<script>
+    Weglot.initialize({
+        api_key: 'wg_31b18c5a6cf9c1e1f5d82872db5bea258'
+    });
+</script>
+  <!-- !language english and french! -->
