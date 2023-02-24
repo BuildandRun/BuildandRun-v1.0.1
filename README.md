@@ -6,6 +6,7 @@
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![New Version][newversion]][newversion-url]
 
 
 
@@ -205,6 +206,9 @@ Learn How To Get Started
 [php-url]: https://www.php.net/
 [css-shield]: https://img.shields.io/badge/build-css-blueviolet?style=flat-square&logo=appveyor
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
+[newversion]: https://img.shields.io/badge/VERSION-Build%20and%20Run%20v2.0.2-green?style=for-the-badge&logo=appveyor
+[newversion-url]: https://brstore.us
+
 [contributors-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
 [contributors-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
 [forks-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
