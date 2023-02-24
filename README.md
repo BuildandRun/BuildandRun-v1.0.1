@@ -5,8 +5,9 @@
 
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
-[![New Version][newversion]][newversion-url]
 [![Server][server]][server-url]
+[![New Version][newversion]][newversion-url]
+
 
 
 
