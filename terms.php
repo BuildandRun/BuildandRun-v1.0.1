@@ -20,11 +20,11 @@
   <meta name="twitter:title" content="B&R: A New way to Lead">
   <meta name="twitter:description" content="B&R Store - Introducing the Future">
   <meta name="twitter:creator" content="@BandR">
-  <meta name="twitter:image" content="https://technology.brstore.us/bandr/banner.png">
+  <meta name="twitter:image" content="./tech/bandr/banner.png">
   <meta property="og:title" content="B&R: A New way to Lead">
   <meta property="og:type" content="Article">
-  <meta property="og:url" content="https://technology.brstore.us">
-  <meta property="og:image" content="https://technology.brstore.us/banner.png">
+  <meta property="og:url" content="./tech">
+  <meta property="og:image" content="./tech/banner.png">
   <meta property="og:description" content="B&R Store - Introducing the Future">
   <meta property="og:site_name" content="B&R: A New way to Lead">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -65,7 +65,7 @@
           <div class="history">
             <div class="post__nav"><a class="post__link js-tabs-link active" href="#">Terms Of Service</a><a
                 class="post__link js-tabs-link" href="privacy.php">Privacy Policy</a><a class="post__link js-tabs-link"
-                href="https://technology.brstore.us/pricing/">FAQs</a></div>
+                href="./tech/pricing/">FAQs</a></div>
             <div class="post__container">
               <div class="post__box js-tabs-item">
                 <div class="post__info" action="best" href="test.html">Terms of Service  <a href="Terms">

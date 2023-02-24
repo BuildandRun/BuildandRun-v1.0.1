@@ -1,6 +1,6 @@
 <!doctype html>
 <title>🤝 B&R | Partners 🤝 </title>
-<link rel="icon" type="image/x-icon" href="https://technology.brstore.us/bandr/faviconBR.png">
+<link rel="icon" type="image/x-icon" href="./tech/bandr/faviconBR.png">
 <head>
     <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -15,7 +15,7 @@
 </style>
 
 <article>
-    <a href="https://brstore.us"><img src="https://technology.brstore.us/bandr/SERVICE/bNr.png" alt="logo" style="width: 200px; height: auto; padding-left: 10rem; margin-top: -3rem;"></a>
+    <a href="https://brstore.us"><img src="./tech/bandr/SERVICE/bNr.png" alt="logo" style="width: 200px; height: auto; padding-left: 10rem; margin-top: -3rem;"></a>
     <h1>Our Partners! 🤝🚀</h1>
     <div>
         <p>This is a list of the companies who have teamed up with "us" (<strong>Build and Run</strong>) to make your life easier online in an effort to improve the world. Working with these businesses is something we truly value.</p>
