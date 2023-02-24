@@ -86,7 +86,7 @@
     <div class="footer__body">
       <div class="footer__center center">
         <div class="footer__col">
-          <div class="footer__box"><a class="footer__logo" href="index.php"><img class="some-icon"
+          <div class="footer__box"><a class="footer__logo" href="index.html"><img class="some-icon"
                 src="bandr/footer.png" alt="Fitness Pro"><img class="some-icon-dark" src="bandr/footer.png"
                 alt="Fitness Pro"></a>
             <label class="theme js-theme">
