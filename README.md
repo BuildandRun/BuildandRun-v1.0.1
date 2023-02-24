@@ -23,14 +23,14 @@
   <p align="center">
     The initial release of Build and Run's Web App
     <br />
-    <a href="https://brstore.ddns.net"><strong>Explore Version 1.0.1»</strong></a>
+    <a href="https://brstore.ddns.net" target="_blank"><strong>Explore Version 1.0.1»</strong></a>
     <br />
     <br />
-    <a href="http://brstore.ddns.net">DNS Mask</a>
+    <a href="http://brstore.ddns.net" target="_blank">DNS Mask</a>
     ·
-    <a href="http://107.22.108.84">Public IP</a>
+    <a href="http://107.22.108.84" target="_blank">Public IP</a>
     ·
-    <a href="http://172.26.9.99">Private IP</a>
+    <a href="http://172.26.9.99" target="_blank">Private IP</a>
   </p>
 </div>
 
