@@ -1,27 +1,13 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<!-- Reserved To Build and Run v1.0.1-->
 <a name="readme-top"></a>
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
 
 <!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
 
+<div align="center">
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+</div>
 
 
 
@@ -29,7 +15,7 @@
 <br />
 <div align="center">
   <a href="https://brstore.us">
-    <img src="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png" alt="Logo" width="80" height="80">
+    <img src="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png" alt="Logo">
   </a>
 
   <h3 align="center">Build and Run v1.0.1</h3>
@@ -67,7 +53,7 @@
     <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#build-and-run">Build and Run</a></li>
+    <li><a href="#build-and-run">Learn How To Get Started</a></li>
   </ol>
 </details>
 
@@ -95,7 +81,7 @@ Let's take your technology project to the next level! 🔥🚀
 At Build and Run, we take pride in delivering exceptional technology solutions that meet the unique needs of our clients. Our platform, Build and Run v1.0.1, was built with a combination of HTML, JavaScript, PHP, and CSS - the building blocks of modern web development.
 
 * [![HTML][html-shield]][html-url]
-* [![JAVASCRIPT][javascript-shield]][javscript-url]
+* [![JAVASCRIPT][javascript-shield]][javascript-url]
 * [![PHP][php-shield]][php-url]
 * [![CSS][css-shield]][css-url]
 
