@@ -18,10 +18,9 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
+
+[![Version][version]][version-url]
+[![DMCA License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -29,8 +28,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  <a href="https://brstore.us">
+    <img src="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Build and Run v1.0.1</h3>
@@ -62,18 +61,13 @@
       </ul>
     </li>
     <li>
-      <a href="#getting-started">Clone the Build and Run Repository: Step-by-Step Guide</a>
-      <ul>
-        <li></li>
-        <li></li>
-      </ul>
+      <a href="#clone-the-build-and-run-repository-step-by-step-guide">Clone the Build and Run Repository: Step-by-Step Guide</a>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contribution">Contribution</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#buildandrun">Build and Run</a></li>
+    <li><a href="#build-and-run">Build and Run</a></li>
   </ol>
 </details>
 
@@ -100,10 +94,10 @@ Let's take your technology project to the next level! 🔥🚀
 
 At Build and Run, we take pride in delivering exceptional technology solutions that meet the unique needs of our clients. Our platform, Build and Run v1.0.1, was built with a combination of HTML, JavaScript, PHP, and CSS - the building blocks of modern web development.
 
-* [![html][html]][html]
-* [![javscript][javascript]][havscript]
-* [![php][php]][php]
-* [![css][css]][css]
+* [![HTML][html-shield]][html-url]
+* [![JAVASCRIPT][javascript-shield]][javscript-url]
+* [![PHP][php-shield]][php-url]
+* [![CSS][css-shield]][css-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -118,15 +112,17 @@ Welcome to the Build and Run repository - your one-stop solution for all your te
 Here's a step-by-step guide on how to clone the Build and Run repository:
 
 1. First, make sure you have Git installed on your machine. If you don't, you can download it from the official Git website.
+
 2. Next, open your terminal or command prompt and navigate to the directory where you want to clone the repository.
+
 3. Clone the repo
+
    ```sh
    git clone https://github.com/BuildandRun/BuildandRun-v1.0.1.git
    ```
 Make sure to replace <username> with the Build and Run username and <repository> with the name of the repository you want to clone.
 
 4. Press enter and Git will start cloning the repository.
-
 
 5. Once the cloning process is complete, you will have the Build and Run repository on your local machine, ready for you to use!
 
@@ -172,8 +168,6 @@ Our team of experts is dedicated to delivering the highest quality services, ens
 
 Join us on this journey and let us help you create an online presence that stands out from the crowd. Contact us today to learn more about how we can help you build and run your dream project effortlessly.
 
-Thank you for choosing Build and Run - where online surfing is made effortless!
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
@@ -192,9 +186,9 @@ Distributed under DMCA Compliance. See [B&R LLC](https://www.dmca.com/compliance
 
 Email 📩 : [support@brstore.us](mailto:support@brstore.us)
 
-Tel 📞 : [+1 (469) 215-1582](+14692151582)
+Tel 📞 : [+1 (469) 215-1582](Tel:+14692151582)
 
-GitHub 🤝 : [https://github.com/your_username/repo_name](https://github.com/BuildandRun)
+GitHub 🤝 : [https://github.com/BuildandRun](https://github.com/BuildandRun)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,9 +200,9 @@ GitHub 🤝 : [https://github.com/your_username/repo_name](https://github.com/Bu
 
 Learn How To Get Started
 
-* [FAQs](./tech/pricing/index.html)
-* [Privacy Policy](./privacy.php)
-* [Terms Of Use](./terms.php)
+* [FAQs](http://brstore.ddns.net/tech/pricing/index.html)
+* [Privacy Policy](http://brstore.ddns.net/privacy.php)
+* [Terms Of Use](http://brstore.ddns.net/terms.php)
 
 
 
@@ -218,15 +212,23 @@ Learn How To Get Started
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[html-shield]: https://img.shields.io/badge/build-html-red?style=flat-square&logo=appveyor
+[html-url]: https://html.com/
+[javascript-shield]: https://img.shields.io/badge/build-javascript-yellow?style=flat-square&logo=appveyor
+[javascript-url]: https://www.javascript.com/
+[php-shield]: https://img.shields.io/badge/build-php-orange?style=flat-square&logo=appveyor
+[php-url]: https://www.php.net/
+[css-shield]: https://img.shields.io/badge/build-css-blueviolet?style=flat-square&logo=appveyor
+[css-url]: https://www.w3.org/Style/CSS/Overview.en.html
 [contributors-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
 [contributors-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
 [forks-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
 [forks-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://brstore.us
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
+[version]: https://img.shields.io/badge/Version-Build%20and%20Run%20v1.0.1-yellow?style=for-the-badge&logo=appveyor
+[version-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/
+[license-shield]: https://img.shields.io/badge/License-DMCA-brightgreen?style=for-the-badge&logo=appveyor
 [license-url]: https://www.dmca.com/compliance/brstore.us
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/bandr/
