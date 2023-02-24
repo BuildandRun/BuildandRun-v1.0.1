@@ -7,6 +7,7 @@
 [![DMCA License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 [![New Version][newversion]][newversion-url]
+[![Server][server]][server-url]
 
 
 
@@ -23,7 +24,7 @@
   <p align="center">
     The initial release of Build and Run's Web App
     <br />
-    <a href="https://brstore.ddns.net" target="_blank"><strong>Explore Version 1.0.1»</strong></a>
+    <a href="http://brstore.ddns.net" target="_blank"><strong>Explore Version 1.0.1»</strong></a>
     <br />
     <br />
     <a href="http://brstore.ddns.net" target="_blank">DNS Mask</a>
@@ -212,6 +213,8 @@ Learn How To Get Started
 [saas-url]: https://sass-lang.com/
 [unknown-shield]: https://img.shields.io/badge/build-unknown-inactive?style=flat-square&logo=appveyor
 [unknown-url]: #
+[server]: https://img.shields.io/badge/server-API-9cf?style=for-the-badge&logo=
+[server-url]: https://auth.files.nl01.cloud.servers.com:5000/v3/
 
 
 [newversion]: https://img.shields.io/badge/VERSION-Build%20and%20Run%20v2.0.2-green?style=for-the-badge&logo=
