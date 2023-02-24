@@ -5,7 +5,6 @@
 
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
-ㅤㅤㅤ
 [![Server][server]][server-url]
 [![New Version][newversion]][newversion-url]
 
