@@ -69,7 +69,7 @@
                 <div class="spacer-2"></div>
                 <div class="p-lg text-grey">Sorry! Page Not Found</div>
                 <div class="spacer-2"></div>
-                <div class="inline-b"><a data-w-id="084b0e87-c8be-5aa9-440b-43fae0d610b1" href="https://brstore.us"
+                <div class="inline-b"><a data-w-id="084b0e87-c8be-5aa9-440b-43fae0d610b1" href="./"
                         class="btn-primary w-inline-block">
                         <div style="-webkit-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0deg) skew(0, 0)"
                             class="bg-grad button"></div>
