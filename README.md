@@ -5,7 +5,6 @@
 
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 [![New Version][newversion]][newversion-url]
 [![Server][server]][server-url]
 
@@ -172,6 +171,8 @@ Distributed under DMCA Compliance. See [B&R LLC](https://www.dmca.com/compliance
 
 <!-- CONTACT -->
 ## Contact
+
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 Email 📩 : [support@brstore.us](mailto:support@brstore.us)
 
