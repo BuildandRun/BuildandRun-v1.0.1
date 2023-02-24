@@ -84,6 +84,8 @@ At Build and Run, we take pride in delivering exceptional technology solutions t
 * [![JAVASCRIPT][javascript-shield]][javascript-url]
 * [![PHP][php-shield]][php-url]
 * [![CSS][css-shield]][css-url]
+* [![SAAS][saas-shield]][saas-url]
+* [![UNKNOWN][unknown-shield]][unknown-url]
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -172,9 +174,9 @@ Distributed under DMCA Compliance. See [B&R LLC](https://www.dmca.com/compliance
 
 Email 📩 : [support@brstore.us](mailto:support@brstore.us)
 
-Tel 📞 : [+1 (469) 215-1582](Tel:+14692151582)
+Tel 📞 : [+1 (469) 215-1582](tel:14692151582)
 
-GitHub 🤝 : [https://github.com/BuildandRun](https://github.com/BuildandRun)
+GitHub‍ 💻 : [https://github.com/BuildandRun](https://github.com/BuildandRun)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -206,7 +208,13 @@ Learn How To Get Started
 [php-url]: https://www.php.net/
 [css-shield]: https://img.shields.io/badge/build-css-blueviolet?style=flat-square&logo=appveyor
 [css-url]: https://www.w3.org/Style/CSS/Overview.en.html
-[newversion]: https://img.shields.io/badge/VERSION-Build%20and%20Run%20v2.0.2-green?style=for-the-badge&logo=appveyor
+[saas-shield]: https://img.shields.io/badge/build-saas-ff69b4?style=flat-square&logo=appveyor
+[saas-url]: https://sass-lang.com/
+[unknwon-shield]: https://img.shields.io/badge/build-saas-ff69b4?style=flat-square&logo=appveyor
+[unknwon-url]: #
+
+
+[newversion]: https://img.shields.io/badge/VERSION-Build%20and%20Run%20v2.0.2-green?style=for-the-badge&logo=
 [newversion-url]: https://brstore.us
 
 [contributors-shield]: https://github.com/BuildandRun/BuildandRun-v1.0.1/graphs/contributors
@@ -215,9 +223,9 @@ Learn How To Get Started
 [forks-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/forks
 [stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
 [stars-url]: https://brstore.us
-[version]: https://img.shields.io/badge/Version-Build%20and%20Run%20v1.0.1-yellow?style=for-the-badge&logo=appveyor
+[version]: https://img.shields.io/badge/Version-Build%20and%20Run%20v1.0.1-yellow?style=for-the-badge&logo=
 [version-url]: https://github.com/BuildandRun/BuildandRun-v1.0.1/
-[license-shield]: https://img.shields.io/badge/License-DMCA-brightgreen?style=for-the-badge&logo=appveyor
+[license-shield]: https://img.shields.io/badge/License-DMCA-brightgreen?style=for-the-badge&logo=
 [license-url]: https://www.dmca.com/compliance/brstore.us
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/company/bandr/
