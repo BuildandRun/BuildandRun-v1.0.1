@@ -3,11 +3,10 @@
 
 <!-- PROJECT SHIELDS -->
 
-<div align="center">
 [![Version][version]][version-url]
 [![DMCA License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-</div>
+
 
 
 
@@ -15,7 +14,7 @@
 <br />
 <div align="center">
   <a href="https://brstore.us">
-    <img src="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png" alt="Logo">
+    <img src="https://image.noelshack.com/fichiers/2023/08/5/1677267877-bnr.png" alt="Logo" width="200px" height="auto">
   </a>
 
   <h3 align="center">Build and Run v1.0.1</h3>
